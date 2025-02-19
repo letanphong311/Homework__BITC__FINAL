@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon"
+        href="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-1/475279460_634874029047350_7797818511458331741_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeFXMtbON2aJosmpnbmAKUbjODYo-fVuhjg4Nij59W6GOJ6zdQaNFn-_sL49opeAAkaWun-sk0RRFq7IofIZ8Az9&_nc_ohc=kNfbpKv0UksQ7kNvgEBfNKv&_nc_oc=Adim40egb2cLmQ06v8CRe7QByys1Bn2X6UGefxu8df51ueI5M4sY3jfs4k2zzZDGAeF0cjvn7XdFqB98_Ef2OJmC&_nc_zt=24&_nc_ht=scontent.fdad1-3.fna&_nc_gid=AG1PwFVF_cDXJ5uJPsnTkaH&oh=00_AYDMby-AIz7ffOQbgfzpNlrn35lxo-CjGxNWybHzF050oA&oe=67B62C33"
+        type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+
+<body>
+    <div id="header">
+
+        <!-- phần logo -->
+        <div class="header__logo">
+            <img src="./assets/img/logo.png" alt="#">
+            <a href="#">
+                <h1>PhucStore.vn</h1>
+            </a>
+        </div>
+
+        <!-- nút tìm kiếm với search -->
+        <div class="header__search">
+            <div class="header__input">
+                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                <i class="fa-solid fa-magnifying-glass header__icon-search"></i>
+            </div>
+        </div>
+
+        <!-- đặt đơn hàng và shop -->
+        <div class="header__shop">
+            <div class="header__shop-orders">
+                <i class="fa-solid fa-truck-fast header__icon-truck"></i>
+                <p>Đơn Hàng</p>
+            </div>
+            <i class="fa-solid fa-cart-shopping header__icon-shopping"></i>
+        </div>
+    </div>
+    <div id="content">
+
+        <!-- Navigation -->
+        <div class="content__nav">
+            <ul class="content__nav-list">
+                <!-- điện thoại -->
+                <li class="content__nav-items">
+                    <div class="content__nav-section">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>ĐIỆN THOẠI</p>
+                    </div>
+                    
+                    <!-- khối giả của điện thoại -->
+                     <div id="subnav">
+                        <div class="subnav__container">
+                            <div class="subnav__container-body">
+                                <h2>Chọn Theo Hãng</h2>
+                                <ul>
+                                    <li><a href="#">SamSung</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Readme</a></li>
+                                    <li><a href="#">Xiomi</a></li>
+                                    <li><a href="#">Tecno</a></li>
+                                    <li><a href="#">Nokia</a></li>
+                                    <li><a href="#">Vivo</a></li>
+                                    <li><a href="#">Itel</a></li>
+                                    <li><a href="#">Oppo</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-body">
+                                <h2>Chọn Theo Mức Giá</h2>
+                                <ul>
+                                    <li><a href="#">Dưới 1 triệu</a></li>
+                                    <li><a href="#">Từ 1-3 triệu</a></li>
+                                    <li><a href="#">Từ 3-7 triệu</a></li>
+                                    <li><a href="#">Từ 7-10 triệu</a></li>
+                                    <li><a href="#">Trên 10 triệu</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-body">
+                                <h2>Bán Chạy Nhất</h2>
+                                <ul>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">SamSung</a></li>
+                                    <li><a href="#">Xiomi</a></li>
+                                    <li><a href="#">realdme</a></li>
+                                    <li><a href="#">Oppo</a></li>
+                                    <li><a href="#">Vivo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-img">
+                                <img src="./assets/img/sub__nav-phone.jpeg" alt="">
+                            </div>
+                        </div>
+                     </div>
+                </li>
+
+                <!-- laptop -->
+                <li class="content__nav-items">
+                    <div class="content__nav-section">
+                        <i class="fa-solid fa-laptop"></i>
+                        <p>LAPTOP</p>
+                    </div>
+                     <!-- khối giả của laptop -->
+                     <div id="subnav">
+                        <div class="subnav__container">
+                            <div class="subnav__container-body">
+                                <h2>Chọn Theo Hãng</h2>
+                                <ul>
+                                    <li><a href="#">ASUS vivobook</a></li>
+                                    <li><a href="#">Macbook</a></li>
+                                    <li><a href="#">Dell</a></li>
+                                    <li><a href="#">Hp</a></li>
+                                    <li><a href="#">Masstel</a></li>
+                                    <li><a href="#">Acer</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">MSI</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-body">
+                                <h2>Chọn Theo Mức Giá</h2>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10-15 triệu</a></li>
+                                    <li><a href="#">Từ 15-20 triệu</li></a>
+                                    <li><a href="#">Trên 20 triệu</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-body">
+                                <h2>Bán Chạy Nhất</h2>
+                                <ul>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Dell</a></li>
+                                    <li><a href="#">Macbook</a>Macbook</li>
+                                    <li><a href="#">Hp</a></li>      
+                                </ul>
+                            </div>
+                            <div class="subnav__container-img">
+                                <img src="./assets/img/sub__nav-laptop.jpg" alt="">
+                            </div>
+                        </div>
+                     </div>
+                </li>
+                <!-- tablet -->
+                <li class="content__nav-items">
+                    <div class="content__nav-section">
+                        <i class="fa-solid fa-tablet"></i>
+                        <p>TABLET</p>
+                    </div>
+                     <!-- khối giả của TABLET -->
+                     <div id="subnav">
+                        <div class="subnav__container">
+                            <div class="subnav__container-body">
+                                <h2>Chọn Theo Hãng</h2>
+                                <ul>
+                                    <li><a href="#">Ipad Pro</a></li>
+                                    <li><a href="#">Ipad Air</a></li>
+                                    <li><a href="#">Xiomi Pad 6</a></li>
+                                    <li><a href="#">Lenovo Pad 6</a></li>
+                                    <li><a href="#">Lennovo Tab P12</a></li>
+                                    <li><a href="#">Surface Pro 9</a></li>
+                                    <li><a href="#">Galaxy Tab Ultra/S9+/S9</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-body">
+                                <h2>Chọn Theo Mức Giá</h2>
+                                <ul>
+                                    <li><a href="#">Dưới 5 triệu</a></li>
+                                    <li><a href="#">Từ 5-10 triệu</a></li>
+                                    <li><a href="#">Từ 10-20 triệu</a></li>
+                                    <li><a href="#">Trên 20 triệu</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-body">
+                                <h2>Bán Chạy Nhất</h2>
+                                <ul>
+                                    <li><a href="#">Surfake Pro 9</a></li>
+                                    <li><a href="#">Ipad Pro</a></li>
+                                    <li><a href="#">Lenovo Tab P12</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-img">
+                                <img src="./assets/img/sub__nav-tablet.jpg" alt="">
+                            </div>
+                        </div>
+                     </div>
+                </li>
+                <!-- tai nghe -->
+                <li class="content__nav-items">
+                    <div class="content__nav-section">
+                        <i class="fa-solid fa-headphones"></i>
+                        <p>TAI NGHE</p>
+                    </div>
+
+                     <!-- khối giả của headphone -->
+                     <div id="subnav">
+                        <div class="subnav__container">
+                            <div class="subnav__container-body">
+                                <h2>Chọn Theo Hãng</h2>
+                                <ul>
+                                    <li><a href="#">Xiomi Redmi Buds 4 Lite</a></li>
+                                    <li><a href="#">SoundPEATS TrueAir 2</a></li>
+                                    <li><a href="#">Sony WF-C700N</a></li>
+                                    <li><a href="#">Sony WF-1000XM5</a></li>
+                                    <li><a href="#">Apple AirPods Max</a></li>                     
+                                </ul>
+                            </div>
+                            <div class="subnav__container-body">
+                                <h2>Chọn Theo Mức Giá</h2>
+                                <ul>
+                                    <li><a href="#">Dưới 500 nghìn</a></li>
+                                    <li><a href="#">Từ 500 - 2 triệu</a></li>
+                                    <li><a href="#">Từ 2-5 triệu</a></li>
+                                    <li><a href="#">Trên 5 triệu</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-body">
+                                <h2>Bán Chạy Nhất</h2>
+                                <ul>
+                                    <li><a href="#">Xiomi Redmi Buds 4 Lite</a></li>
+                                    <li><a href="#">Sony WF-C700N</a></li>
+                                    <li><a href="#">Sony WF-1000XM5</a></li>
+                                    <li><a href="#">Apple AirPods Max</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav__container-img">
+                                <img src="./assets/img/sub__nav-headphone.jpg" alt="">
+                            </div>
+                        </div>
+                     </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- SIDER -->
+        <div class="content__sider">
+            <div class="content__sider-img">
+                <img src="./assets/img/sider-1.png" alt="">
+            </div>
+            <div class="content__sider-img">
+                <img src="./assets/img/sider-2.webp" alt="">
+            </div>
+        </div>
+        <!-- POPURAL -->
+        <div class="content__popural">
+            <div class="content__popular-title">
+                <button><a href="#">ROG Strix Go Core</a></button>
+                <button><a href="#">Laptop MSI Gaming</a></button>
+                <button><a href="#">Iphone 14 New</a></button>
+            </div>
+            <div class="content__popular-img">
+                <img src="./assets/img/popural-1.webp" alt="">
+                <img src="./assets/img/popular-2.webp" alt="">
+                <img src="./assets/img/popular-3.webp" alt="">
+            </div>
+        </div>
+        <!-- SUB -->
+        <div class="content__sub">
+            <p>Sản Phẩm Sale</p>
+            <i class="fa-solid fa-fire content__sub-icon"></i>
+        </div>
+        <!-- IPHONE -->
+        <div class="content__iphone">
+            <div class="content__iphone-list">
+                <div class="content__iphone-img">
+                    <img src="./assets/img/iphone-1.jpeg" alt="" class="img-iphone1">
+                    <img src="./assets/img/sale.png" alt="" class="img-sale-iphone">
+                </div>
+                <div class="content__iphone-header">
+                    <h2>iPhone 14 plus 128GB</h2>
+                </div>
+                <div class="content__iphone-body">
+                    <h2>20.990.000 VND</h2>
+                    <del>22.990.000đ VND</del>
+                    <p>Giảm giá: 8.70%</p>
+                    <button>256 GB</button>
+                    <button>512 GB</button>
+                </div>
+                <div class="content__iphone-footer">
+                    <p>Giảm 200.000VND khi thanh toán qua trực tuyến </p>
+                </div>
+                <!-- block fake Iphone -->
+                <div class="content__iphone--sub">
+                    <div class="content__iphone--mua">
+                        <button><a href="#">Mua</a></button>
+                    </div>
+                    <div class="content__iphone--information">
+                        <button><a href="#">Chi Tiết</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__iphone-list">
+                <div class="content__iphone-img">
+                    <img src="./assets/img/iphone-2.jpg" alt="" class="img-iphone1">
+                    <img src="./assets/img/sale.png" alt="" class="img-sale-iphone">
+                </div>
+                <div class="content__iphone-header">
+                    <h2>iPhone 14 plus 128GB</h2>
+                </div>
+                <div class="content__iphone-body">
+                    <h2>20.990.000 VND</h2>
+                    <del>22.990.000đ VND</del>
+                    <p>Giảm giá: 8.70%</p>
+                    <button>256 GB</button>
+                    <button>512 GB</button>
+                </div>
+                <div class="content__iphone-footer">
+                    <p>Giảm 200.000VND khi thanh toán qua trực tuyến </p>
+                </div>
+                 <!-- block fake Iphone -->
+                 <div class="content__iphone--sub">
+                    <div class="content__iphone--mua">
+                        <button><a href="#">Mua</a></button>
+                    </div>
+                    <div class="content__iphone--information">
+                        <button><a href="#">Chi Tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content__iphone-list">
+                <div class="content__iphone-img">
+                    <img src="./assets/img/iphone-3.jpg" alt="" class="img-iphone1">
+                    <img src="./assets/img/sale.png" alt="" class="img-sale-iphone">
+                </div>
+                <div class="content__iphone-header">
+                    <h2>iPhone 14 plus 128GB</h2>
+                </div>
+                <div class="content__iphone-body">
+                    <h2>20.990.000 VND</h2>
+                    <del>22.990.000đ VND</del>
+                    <p>Giảm giá: 8.70%</p>
+                    <button>256 GB</button>
+                    <button>512 GB</button>
+                </div>
+                <div class="content__iphone-footer">
+                    <p>Giảm 200.000VND khi thanh toán qua trực tuyến </p>
+                </div>
+                 <!-- block fake Iphone -->
+                 <div class="content__iphone--sub">
+                    <div class="content__iphone--mua">
+                        <button><a href="#">Mua</a></button>
+                    </div>
+                    <div class="content__iphone--information">
+                        <button><a href="#">Chi Tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content__iphone-list">
+                <div class="content__iphone-img">
+                    <img src="./assets/img/iphone-4.jpg" alt="" class="img-iphone1">
+                    <img src="./assets/img/sale.png" alt="" class="img-sale-iphone">
+                </div>
+                <div class="content__iphone-header">
+                    <h2>iPhone 14 plus 128GB</h2>
+                </div>
+                <div class="content__iphone-body">
+                    <h2>20.990.000 VND</h2>
+                    <del>22.990.000đ VND</del>
+                    <p>Giảm giá: 8.70%</p>
+                    <button>256 GB</button>
+                    <button>512 GB</button>
+                </div>
+                <div class="content__iphone-footer">
+                    <p>Giảm 200.000VND khi thanh toán qua trực tuyến </p>
+                </div>
+                 <!-- block fake Iphone -->
+                 <div class="content__iphone--sub">
+                    <div class="content__iphone--mua">
+                        <button><a href="#">Mua</a></button>
+                    </div>
+                    <div class="content__iphone--information">
+                        <button><a href="#">Chi Tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content__iphone-list">
+                <div class="content__iphone-img">
+                    <img src="./assets/img/iphone-5.jpeg" alt="" class="img-iphone1">
+                    <img src="./assets/img/sale.png" alt="" class="img-sale-iphone">
+                </div>
+                <div class="content__iphone-header">
+                    <h2>iPhone 14 plus 128GB</h2>
+                </div>
+                <div class="content__iphone-body">
+                    <h2>20.990.000 VND</h2>
+                    <del>22.990.000đ VND</del>
+                    <p>Giảm giá: 8.70%</p>
+                    <button>256 GB</button>
+                    <button>512 GB</button>
+                </div>
+                <div class="content__iphone-footer">
+                    <p>Giảm 200.000VND khi thanh toán qua trực tuyến </p>
+                </div>
+                 <!-- block fake Iphone -->
+                 <div class="content__iphone--sub">
+                    <div class="content__iphone--mua">
+                        <button><a href="#">Mua</a></button>
+                    </div>
+                    <div class="content__iphone--information">
+                        <button><a href="#">Chi Tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content__iphone-list">
+                <div class="content__iphone-img">
+                    <img src="./assets/img/iphone-6.webp" alt="" class="img-iphone1">
+                    <img src="./assets/img/sale.png" alt="" class="img-sale-iphone">
+                </div>
+                <div class="content__iphone-header">
+                    <h2>iPhone 14 plus 128GB</h2>
+                </div>
+                <div class="content__iphone-body">
+                    <h2>20.990.000 VND</h2>
+                    <del>22.990.000đ VND</del>
+                    <p>Giảm giá: 8.70%</p>
+                    <button>256 GB</button>
+                    <button>512 GB</button>
+                </div>
+                <div class="content__iphone-footer">
+                    <p>Giảm 200.000VND khi thanh toán qua trực tuyến </p>
+                </div>
+                 <!-- block fake Iphone -->
+                 <div class="content__iphone--sub">
+                    <div class="content__iphone--mua">
+                        <button><a href="#">Mua</a></button>
+                    </div>
+                    <div class="content__iphone--information">
+                        <button><a href="#">Chi Tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content__iphone-list">
+                <div class="content__iphone-img">
+                    <img src="./assets/img/iphone-7.jpeg" alt="" class="img-iphone1">
+                    <img src="./assets/img/sale.png" alt="" class="img-sale-iphone">
+                </div>
+                <div class="content__iphone-header">
+                    <h2>iPhone 14 plus 128GB</h2>
+                </div>
+                <div class="content__iphone-body">
+                    <h2>20.990.000 VND</h2>
+                    <del>22.990.000đ VND</del>
+                    <p>Giảm giá: 8.70%</p>
+                    <button>256 GB</button>
+                    <button>512 GB</button>
+                </div>
+                <div class="content__iphone-footer">
+                    <p>Giảm 200.000VND khi thanh toán qua trực tuyến </p>
+                </div>
+                 <!-- block fake Iphone -->
+                 <div class="content__iphone--sub">
+                    <div class="content__iphone--mua">
+                        <button><a href="#">Mua</a></button>
+                    </div>
+                    <div class="content__iphone--information">
+                        <button><a href="#">Chi Tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content__iphone-list">
+                <div class="content__iphone-img">
+                    <img src="./assets/img/iphone-4.jpg" alt="" class="img-iphone1">
+                    <img src="./assets/img/sale.png" alt="" class="img-sale-iphone">
+                </div>
+                <div class="content__iphone-header">
+                    <h2>iPhone 14 plus 128GB</h2>
+                </div>
+                <div class="content__iphone-body">
+                    <h2>20.990.000 VND</h2>
+                    <del>22.990.000đ VND</del>
+                    <p>Giảm giá: 8.70%</p>
+                    <button>256 GB</button>
+                    <button>512 GB</button>
+                </div>
+                <div class="content__iphone-footer">
+                    <p>Giảm 200.000VND khi thanh toán qua trực tuyến </p>
+                </div>
+                 <!-- block fake Iphone -->
+                 <div class="content__iphone--sub">
+                    <div class="content__iphone--mua">
+                        <button><a href="#">Mua</a></button>
+                    </div>
+                    <div class="content__iphone--information">
+                        <button><a href="#">Chi Tiết</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content__support -->
+        <div class="content__support">
+            <div class="content__support-section">
+                    <button><a href="#">Sản Phẩm Chính Hãng</a></button>
+                    <button><a href="#">Miễn Phí Toàn Quốc</a></button>
+                    <button><a href="#">Hotitle Hỗ Trợ</a></button>
+                    <button><a href="#">Thủ Tục Đổi Trả Dễ Dàng</a></button>
+            </div>
+            <div class="content__support-informaton">
+                <div class="content__support-img">
+                    <img src="./assets/img/content__support.jpg" alt="">
+                </div>
+                <div class="content__support-register">
+                    <h2>Đăng kí để nhận tin </h2>
+                    <p> Đăng kí để nhận những chương trình ưu đãi hot nhất của cửa hàng chúng tôi Phucxo.vn </p>
+                </div>
+                <div class="content__support-button">
+                    <input type="email" name="" id="content__support-button" placeholder="Nhập email của bạn ở đây ">
+                    <i class="fa-solid fa-envelope content__support-button-icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Content__information -->
+        <div class="content__information">
+            <div class="content_informatin-list">
+                <ul>
+                    <li><a href="#">Giới thiệu về công ty</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+                <div class="content_informatin-list-img">
+                    <img src="./assets/img/footer anh1.png" alt="">
+                    <img src="./assets/img/footer anh2.png" alt="">
+                </div>
+            </div>
+                              <!--                -->
+            <div class="content_informatin-list">
+                <ul>
+                    <li><a href="#">Tin tuyển dụng</a></li>
+                    <li><a href="#">Tin khuyến mại</a></li>
+                </ul>
+                <div class="content_informatin-list-img">
+                    <img src="./assets/img/ft-img3.png" alt="">
+                    <img src="./assets/img/ft-img4.png" alt="">
+                    <img src="./assets/img/ft-img5.png" alt="">
+                </div>
+            </div>
+                                <!--                -->
+            <div class="content_informatin-list">
+                <ul>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Hệ thống bảo hành</a></li>
+                    <li><a href="#">Giới thiệu máy đổi trả</a></li>
+                </ul>
+            </div>
+                                <!--                -->
+
+            <div class="content__information-support">
+                <div class="content__information-pay">
+                    <h2>Hỗ trợ thanh toán:</h2>
+                    <div class="div">
+                        <img src="./assets/img/ft-img6.png" alt="">
+                        <img src="./assets/img/ft-img7.png" alt="">
+                        <img src="./assets/img/ft-img8.png" alt="">
+                    </div>
+                </div>
+                <div class="content__information-connect">
+                    <h2>Kết nối với chúng tôi:</h2>
+                    <div class="div">
+                        <img src="./assets/img/icon-facebook.png" alt="">
+                        <img src="./assets/img/icon-zalo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            © 2007 - 2023 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số FPT / Địa chỉ: 261 - 263
+            Khánh Hội, P2, Q4, TP. Hồ Chí Minh / GPĐKKD số 0311609355 do Sở KHĐT
+            TP.HCM cấp ngày 08/03/2012. GP số 47/GP-TTĐT do sở TTTT TP HCM cấp ngày
+            02/07/2018. Điện thoại:<a href="#">0357839115</a> email: <a href="#">phucxo262@gmail.com </a>Chịu trách nhiệm nội dung: Nguyễn Trịnh Nhật Linh.
+        </p>
+    </div>
+</body>
+
+</html>

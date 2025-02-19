@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+}
+                                /*  BEGIN HEADER */
+#header{
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    height: 100px;
+    align-items: center;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* css phần logo */
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.header__logo > img{
+    width: 50px;
+    height: 50px;
+}
+.header__logo > a{
+    text-decoration: none;
+}
+.header__logo > a > h1{
+    font-size: 25px;
+    color: rgb(212, 130, 92);;
+    margin-left: 5px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* thuộc tính hover */
+.header__logo > a > h1:hover{
+    color: #b6cfc6;;
+}
+
+/* css phần nút tìm kiếm vs search*/
+.header__search{
+    display: flex;
+}
+.header__input{
+    position: relative;
+}
+.header__input > input{
+    height: 38px;
+    min-width: 600px;
+    border-radius: 15px;
+    border: 2px solid #773838;
+    outline: none;
+    margin: 12px;
+    padding-left: 15px;
+} 
+.header__input > .header__icon-search{
+    position: absolute;
+    top: 23px;
+    right: 25px;
+}
+
+/* thuộc tính hover nút search */
+.header__input > .header__icon-search:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* css Phần đơn hàng và shop */
+.header__shop{
+    display: flex;
+    align-items: center;
+}
+.header__shop-orders{
+    display: flex;
+    background-color: #090724dc;
+    color: white;
+    min-width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 12px;
+}
+.header__shop > .header__icon-shopping{
+    color: #ee0034dc;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* thuộc tính hover header__shop__oders */
+.header__shop > .header__shop-orders:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* thuộc tính hover icon__shopping */
+.header__shop > .header__icon-shopping:hover{
+    color: #090724dc;
+    cursor: pointer;
+}
+
+                                /* BEGIN CONTENT */
+#content{
+
+}
+.content__nav{
+    margin: 113px auto 0;
+    background-color: #EE0033;
+    height: 50px;
+    width: 84%;
+    border-radius: 10px;
+    position: relative;
+}
+.content__nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 55px;
+    padding-top: 12px;
+    list-style: none;
+    color:  rgb(243, 244, 245);
+    font-size: 15px;
+    gap: 50px;
+}
+
+/* hover vào các danh sách */
+.content__nav-list > li:hover{
+    color: black;
+    cursor: pointer;
+}
+.content__nav-items{
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    margin-left: -10px;
+    
+}
+.content__nav-section{
+    padding: 25px;
+    margin-bottom: 9px;
+}
+
+/* css khối giả của content__nav */
+.content__nav-items:hover #subnav{
+    display: block;
+}
+#subnav{
+    display: none;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: auto;
+}
+.subnav__container{
+    display: flex;
+    justify-content: space-between;
+}
+.subnav__container-body{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 25px;
+    flex-wrap: wrap;
+    /* height: 150px; */
+    
+}
+.subnav__container-body > ul > li > a{
+    text-decoration: none;
+    list-style: none;
+    color:  #999999;
+}
+.subnav__container-body > h2{
+    color: black;
+    font-size: 18px;
+    margin-right: auto;
+}
+.subnav__container-body > ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 150px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -25px;
+    z-index: 10;
+}
+.subnav__container-body > ul > li{
+    list-style: none;
+    color: #999999;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 25px;
+}
+.subnav__container-img{
+    width: 20%;
+}
+.subnav__container-img > img{
+    width: 20%;
+    position: absolute;
+    right: 4px;
+    top: 8%;
+}
+
+/* thuộc tính hover vào subnav__conten-body */
+.subnav__container-body > ul > li > a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* css phần Sider */
+.content__sider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.content__sider-img{
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+.content__sider-img:first-child{
+    animation: slideInLeft 1s ease;
+}
+.content__sider-img:last-child{
+    animation: slideInRight 1s ease;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.content__sider-img:hover{
+    transform: scale(1.01);
+    opacity: 0.8;
+    cursor: pointer;
+}
+.content__sider-img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* css phần content__popular */
+.content__popural{
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+.content__popular-title{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+}
+.content__popular-title > button{
+    display: block;
+    border: none;
+    background-color: white;
+}
+.content__popular-title > button > a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: #EE2652;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #f97b7b;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+
+}
+/* thuộc tính hover vào content__popular-title */
+.content__popular-title > button > a:hover{
+    transform: scale(1.05);
+    background-color: #282741;
+    border: none;
+}
+.content__popular-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px; 
+}
+.content__popular-img > img{
+    width: 18%;
+    border-radius: 10px;
+    border: 1px solid #daafb7;
+    margin-right: -24px;
+}
+
+/* css content__sub */
+.content__sub{
+    display: flex;
+    background-color: #dc1010;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    line-height: 2;
+    margin: 5px 30px;
+    text-align: center;
+}
+.content__sub > p{
+    font-size: 16px;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+}
+.content__sub-icon{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+/* css content__iphone */
+.content__iphone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+.content__iphone-list{
+    position: relative;
+    background-color: white;
+    width: 320px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+.content__iphone-img{
+    position: relative;
+    transition: transform 0.3s ease;
+}
+/* Thuộc tính hover */
+.content__iphone-img > .img-iphone1:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.content__iphone-img > .img-iphone1{
+    width: 225px;
+    margin-top: 10px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.content__iphone-img > .img-sale-iphone{
+    position: absolute;
+    width: 50px;
+    top: -32px;
+    right: -30px;
+}
+.content__iphone-header{
+}
+.content__iphone-header > h2{
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 10px;
+    color: black;
+}
+.content__iphone-body{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.content__iphone-body > h2{
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+.content__iphone-body > del{
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.content__iphone-body > p{
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+}
+.content__iphone-body > button{
+    margin-top: 10px;
+    min-width: 15%;
+    height: 20px;
+    padding: 7px 7px;
+    text-align: center;
+    line-height: 0;
+    color: rgba(43, 124, 200);
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.content__iphone-body > button + button{
+    margin-right: 5px;
+}
+.content__iphone-footer{
+    margin-top: 15px;
+}
+.content__iphone-footer > p{
+    font-size: 17px;
+    opacity: 0.7;
+    margin: 0 15px;
+}
+
+/* block fake iphone */
+.content__iphone--sub{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+.content__iphone--sub > .content__iphone--mua > button{
+    /* display: none; */
+    background-color: #EE2652;
+    min-width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    font-size: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.content__iphone--sub > .content__iphone--mua > button > a{
+    color: white;
+    text-decoration: none;
+}
+.content__iphone--sub > .content__iphone--mua > button:hover{
+    opacity: 0.9;
+}
+.content__iphone--sub > .content__iphone--information > button{
+    min-width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    font-size: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #a4afb9;
+}
+.content__iphone--sub > .content__iphone--information > button > a{
+    color: white;
+    text-decoration: none;
+}
+/* thuộc tính hover */
+.content__iphone--sub > .content__iphone--information > button:hover{
+    opacity: 0.9;
+}
+.content__iphone-list:hover .content__iphone--sub{
+    display: flex;
+}
+
+/* css content__support */
+.content__support{
+    margin-top: 20px;
+    min-height: 200px;
+}
+.content__support-section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+.content__support-section > button{
+    border: none;
+    background-color: #EE2652;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 150px;    
+}
+/* thuôcj tính hover */
+.content__support-section > button:hover{
+    background-color: #282741;
+    cursor: pointer;
+}
+.content__support-section > button > a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+.content__support-informaton{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.content__support-img{
+    background-color: #f2f2f2;
+    margin-left: 20px;
+}
+.content__support-img > img{
+    width: 40%;
+    border-radius: 7px;
+}
+.content__support-register{
+    width: 40%;
+    text-align: center;
+}
+.content__support-register > h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.content__support-register > h2 > p{
+    font-size: 25px;
+    /* text-align: center; */
+}
+.content__support-button{
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    align-items: center;
+    margin-right: 20px;
+}
+.content__support-button > input{
+    margin-right: 10px;
+    height: 50px;
+    width: 100%;
+    flex: 1;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    line-height: 50px;
+}
+.content__support-button > .content__support-button-icon{
+    margin-left: 10px;
+    color:rgb(237, 70, 44);
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+.content__support-button > .content__support-button-icon:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+/* css phần content__information */
+.content__information{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    margin-top: 35px;
+    min-height: 100px;
+}
+.content_informatin-list{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    width: 220px;
+}
+.content_informatin-list > ul > li{
+    list-style: none;
+    padding: 5px 0;
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: center;
+}
+/* thuộc tính hover */
+.content_informatin-list > ul > li > a:hover{
+    color: black;
+    cursor: pointer;
+    text-decoration:underline;
+}
+.content_informatin-list > ul > li > a{
+    text-decoration: none;
+    color: #0168fa;
+    font-size: 15px;
+    text-align: center;
+}
+.content_informatin-list > .content_informatin-list-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 10px;
+    margin-left: 40px;
+}
+.content_informatin-list > .content_informatin-list-img > img{
+    display: flex;
+    min-width: 40px;
+    
+}
+
+.content__information-support{
+    display: flex;  
+    align-items: center;
+    max-width: 38%;
+    
+}
+.content__information-pay{
+    display: flex;
+    flex-direction: column;
+}
+.content__information-pay > h2{
+    color: #444B52;
+    font-weight: 400;
+    font-size: 15px;
+}
+.content__information-pay > div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.content__information-pay > div > img{
+    display: flex;
+    flex-direction: column;
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+.content__information-pay > div > img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.content__information-connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.content__information-connect > h2{
+    color: #444B52;
+    font-weight: 700;
+    font-size: 20px;
+}
+.content__information-connect > div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.content__information-connect > div > img{
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+.content__information-connect > div > img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* css phần footer */
+#footer{
+    display: flex;
+    text-align: center;
+    min-height: 50px;
+    margin: 20px 30px;
+    line-height: 1.4;
+    opacity: 0.8;
+    font-size: 17px;
+}
